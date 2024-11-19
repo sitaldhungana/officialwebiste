@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #2d2d2d;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #5a0dbb;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        h2 {
+            color: #6a11cb;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            border-left: 6px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        p, ul {
+            margin: 15px 0;
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #6a11cb;
+            color: #fff;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #6a11cb;
+            color: white;
+            padding: 14px 16px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.4rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Privacy Policy</h1>
+    <p>Your privacy matters. Here's how we protect your information.</p>
+</header>
+
+<div class="container">
+    <h2>Data We Collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+        <li>Name and contact details</li>
+        <li>Email address</li>
+        <li>Phone number</li>
+        <li>Business information</li>
+    </ul>
+    <p>This data helps us keep you updated about services and new features.</p>
+
+    <h2>Security</h2>
+    <p>We prioritize data security with advanced measures. However, no system is entirely foolproof, and absolute security cannot be guaranteed.</p>
+
+    <h2>Third-Party Ads Integration</h2>
+    <p>We may work with third-party services such as:</p>
+    <ul>
+        <li>Google Play Services</li>
+        <li>Google Analytics for Firebase</li>
+        <li>AdMob</li>
+        <li>Firebase Crashlytics</li>
+        <li>Facebook Ads</li>
+    </ul>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We update this policy periodically. Check this page for changes. Effective: November 7, 2023.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions or suggestions, contact us at:</p>
+    <p>Email: <a href="mailto:chandramayadhungana215@gmail.com">chandramayadhungana215@gmail.com</a></p>
+    <p>Address: Pokhara, Nepal</p>
+</div>
+
+<footer>
+    <p>© 2024 Developed by Sital Dhungana</p>
+    <p><a href="#">Terms and Conditions</a> | <a href="#">Help</a></p>
+</footer>
+
+<div class="back-to-top" id="backToTop">↑</div>
+
+<script>
+    // Back-to-Top Button Logic
+    const backToTop = document.getElementById('backToTop');
+    window.onscroll = function () {
+        if (window.scrollY > 200) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    };
+
+    backToTop.onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+</body>
+</html>
